@@ -39,6 +39,7 @@
     "url": "git://github.com/madeleinedaly/node-aviglitch-utils.git"
   },
   "scripts": {
-    "build": "babel src --out-dir bin"
+    "build": "babel src --out-dir bin",
+    "preinstall": "npm run build"
   }
 }
