@@ -18,8 +18,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-shebang": "0.0.0",
-    "babel-preset-env": "^1.6.1",
-    "xyz": "^3.0.0"
+    "babel-preset-env": "^1.6.1"
   },
   "keywords": [
     "avi",
@@ -28,9 +27,6 @@
     "video"
   ],
   "files": [
-    "package.json",
-    "README.md",
-    "src",
     "bin"
   ],
   "homepage": "https://github.com/madeleinedaly/node-aviglitch-utils",
@@ -41,6 +37,6 @@
   },
   "scripts": {
     "build": "babel src --out-dir bin",
-    "postinstall": "npm run build"
+    "release": "npm run build && np --no-yarn"
   }
 }
