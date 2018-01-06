@@ -1,3 +1,4 @@
+// https://gist.github.com/ucnv/466869
 import AviGlitch from 'aviglitch';
 import times from 'lodash/times';
 import random from 'lodash/random';
