@@ -37,6 +37,7 @@
   },
   "scripts": {
     "build": "babel src --out-dir bin",
-    "release": "npm run build && np --no-yarn"
+    "version": "npm run build",
+    "release": "np --no-yarn"
   }
 }
