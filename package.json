@@ -1,0 +1,40 @@
+{
+  "name": "node-aviglitch-utils",
+  "description": "A Node.js port of aviglitch-utils by ucnv.",
+  "version": "0.0.1",
+  "author": "Madeleine Daly",
+  "bugs": {
+    "url": "https://github.com/madeleinedaly/node-aviglitch-utils/issues"
+  },
+  "dependencies": {
+    "aviglitch": "^0.3.0",
+    "eazy-logger": "^3.0.2",
+    "lodash": "^4.17.4",
+    "meow": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "keywords": [
+    "avi",
+    "datamosh",
+    "glitch",
+    "video"
+  ],
+  "files": [
+    "package.json",
+    "README.md",
+    "src",
+    "lib"
+  ],
+  "homepage": "https://github.com/madeleinedaly/node-aviglitch-utils",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/madeleinedaly/node-aviglitch-utils.git"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  }
+}
