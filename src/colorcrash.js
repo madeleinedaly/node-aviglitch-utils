@@ -21,7 +21,7 @@ times(100, () => {
   q.concat(x.mul(random(50)));
 });
 
-const dest = path.resolve(process.cwd(), output);
+const dest = path.resolve(process.cwd(), output || 'out.avi');
 AviGlitch.open(q).output(dest, true, () => {
   process.exit(0);
 });
