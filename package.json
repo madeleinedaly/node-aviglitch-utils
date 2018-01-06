@@ -41,6 +41,6 @@
   },
   "scripts": {
     "build": "babel src --out-dir bin",
-    "preinstall": "npm run build"
+    "postinstall": "npm run build"
   }
 }
