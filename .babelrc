@@ -5,5 +5,11 @@
         "node": "current"
       }
     }]
+  ],
+  "plugins": [
+    ["shebang", {
+      "replacement": "#!/usr/bin/env node",
+      "force": true
+    }]
   ]
 }

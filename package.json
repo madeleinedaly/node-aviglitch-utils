@@ -1,8 +1,11 @@
 {
   "name": "aviglitch-utils",
   "description": "A Node.js port of aviglitch-utils by ucnv.",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "author": "Madeleine Daly",
+  "bin": {
+    "colorcrash": "./bin/colorcrash.js"
+  },
   "bugs": {
     "url": "https://github.com/madeleinedaly/node-aviglitch-utils/issues"
   },
@@ -14,6 +17,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-shebang": "0.0.0",
     "babel-preset-env": "^1.6.1"
   },
   "keywords": [
@@ -26,7 +30,7 @@
     "package.json",
     "README.md",
     "src",
-    "lib"
+    "bin"
   ],
   "homepage": "https://github.com/madeleinedaly/node-aviglitch-utils",
   "license": "MIT",
@@ -35,6 +39,6 @@
     "url": "git://github.com/madeleinedaly/node-aviglitch-utils.git"
   },
   "scripts": {
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir bin"
   }
 }
