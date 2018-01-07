@@ -2,12 +2,20 @@
 // https://gist.github.com/ucnv/466869
 'use strict';
 const AviGlitch = require('aviglitch');
-const times = require('lodash/times');
 const random = require('lodash/random');
+const times = require('lodash/times');
+const meow = require('meow');
 const fs = require('fs');
 const path = require('path');
 
-const [ input, output ] = process.argv.slice(2);
+const cli = meow(`
+    Usage
+      $ colorcrash <input> [<output>]
+`, {
+  description: 'colorcrash.js - Repeat random frames'
+});
+
+const [ input, output ] = cli.input;
 const a = AviGlitch.open(path.resolve(process.cwd(), input));
 
 let deltas = [];
