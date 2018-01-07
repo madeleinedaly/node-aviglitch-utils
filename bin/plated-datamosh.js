@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 'use strict';
 const AviGlitch = require('aviglitch');
-const fs = require('fs');
 const path = require('path');
 
 const [ input, output ] = process.argv.slice(2);

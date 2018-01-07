@@ -3,7 +3,6 @@
 const AviGlitch = require('aviglitch');
 const random = require('lodash/random');
 const times = require('lodash/times');
-const fs = require('fs');
 const path = require('path');
 
 const [ input, output ] = process.argv.slice(2);
