@@ -11,14 +11,11 @@
   },
   "dependencies": {
     "aviglitch": "^0.3.0",
-    "eazy-logger": "^3.0.2",
     "lodash": "^4.17.4",
     "meow": "^4.0.0"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-shebang": "0.0.0",
-    "babel-preset-env": "^1.6.1"
+  "engines": {
+    "node": ">=6.9.0"
   },
   "keywords": [
     "avi",
@@ -36,8 +33,6 @@
     "url": "git://github.com/madeleinedaly/node-aviglitch-utils.git"
   },
   "scripts": {
-    "build": "babel src --out-dir bin",
-    "version": "npm run build",
     "release": "np --no-yarn"
   }
 }

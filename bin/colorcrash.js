@@ -1,9 +1,11 @@
+// #!/usr/bin/env node
 // https://gist.github.com/ucnv/466869
-import AviGlitch from 'aviglitch';
-import times from 'lodash/times';
-import random from 'lodash/random';
-import fs from 'fs';
-import path from 'path';
+'use strict';
+const AviGlitch = require('aviglitch');
+const times = require('lodash/times');
+const random = require('lodash/random');
+const fs = require('fs');
+const path = require('path');
 
 const [ input, output ] = process.argv.slice(2);
 const a = AviGlitch.open(path.resolve(process.cwd(), input));
