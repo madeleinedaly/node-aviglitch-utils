@@ -4,7 +4,8 @@
   "version": "0.0.4",
   "author": "Madeleine Daly",
   "bin": {
-    "colorcrash": "./bin/colorcrash.js"
+    "colorcrash": "./bin/colorcrash.js",
+    "plated-mosh": "./bin/plated-mosh.js"
   },
   "bugs": {
     "url": "https://github.com/madeleinedaly/node-aviglitch-utils/issues"
