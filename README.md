@@ -12,5 +12,5 @@ npm i -g aviglitch-utils
 
 ```sh
 colorcrash video.avi
-plated-mosh video.avi
+plated-datamosh video.avi
 ```
