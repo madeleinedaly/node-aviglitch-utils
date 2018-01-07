@@ -1,7 +1,7 @@
 {
   "name": "aviglitch-utils",
   "description": "A Node.js port of aviglitch-utils by ucnv.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Madeleine Daly",
   "bin": {
     "colorcrash": "./bin/colorcrash.js"
