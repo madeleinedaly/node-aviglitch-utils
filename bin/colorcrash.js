@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// https://gist.github.com/ucnv/466869
 'use strict';
 const AviGlitch = require('aviglitch');
 const random = require('lodash/random');
@@ -25,5 +24,5 @@ times(100, () => {
 
 const dest = path.resolve(process.cwd(), output || 'out.avi');
 AviGlitch.open(q).output(dest, true, () => {
-  process.exit(0);
+  process.exit();
 });

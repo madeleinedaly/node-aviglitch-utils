@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// https://gist.github.com/ucnv/772097
 'use strict';
 const AviGlitch = require('aviglitch');
 const fs = require('fs');
@@ -22,5 +21,5 @@ keys.forEach(i => {
 
 const dest = path.resolve(process.cwd(), output || 'out.avi');
 a.output(dest, true, () => {
-  process.exit(0);
+  process.exit();
 });
