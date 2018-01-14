@@ -37,5 +37,8 @@
   },
   "scripts": {
     "release": "np --no-yarn"
+  },
+  "devDependencies": {
+    "np": "^2.18.3"
   }
 }
