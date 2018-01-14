@@ -2,4 +2,7 @@ node_modules/
 *.avi
 *.jpeg
 *.jpg
+*.m4a
+*.mov
+*.mp4
 *.png
