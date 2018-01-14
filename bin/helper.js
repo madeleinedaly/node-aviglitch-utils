@@ -3,14 +3,13 @@ const tempy = require('tempy');
 const { promisify } = require('util');
 const childProcess = require('child_process');
 const execFile = promisify(childProcess.execFile);
-const execSync = childProcess.execSync;
 const path = require('path');
 const fs = require('fs');
 
-const ffmpeg = async args => {
-  console.log(`ffmpeg ${args}`);
+// treats ffmpeg stderr as stdout
+const runcmd = async (cmd, args) => {
   try {
-    const { stdout } = await execFile('ffmpeg', args.split(' '));
+    const { stdout } = await execFile(cmd, args);
     return stdout;
   } catch({ stderr }) {
     return stderr;
@@ -29,6 +28,6 @@ const mktmpdir = debug => {
 };
 
 module.exports = {
-  ffmpeg,
+  runcmd,
   mktmpdir
 };

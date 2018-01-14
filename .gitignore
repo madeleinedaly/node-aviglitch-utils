@@ -1,2 +1,5 @@
 node_modules/
 *.avi
+*.jpeg
+*.jpg
+*.png
