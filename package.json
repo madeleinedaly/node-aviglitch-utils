@@ -5,13 +5,15 @@
   "author": "Madeleine Daly",
   "bin": {
     "colorcrash": "./bin/colorcrash.js",
-    "plated-datamosh": "./bin/plated-datamosh.js"
+    "plated-datamosh": "./bin/plated-datamosh.js",
+    "squeeze-frame": "./bin/squeeze-frame.js"
   },
   "bugs": {
     "url": "https://github.com/madeleinedaly/node-aviglitch-utils/issues"
   },
   "dependencies": {
     "aviglitch": "^0.3.0",
+    "lodash": "^4.17.4",
     "meow": "^4.0.0",
     "tempy": "^0.2.1"
   },

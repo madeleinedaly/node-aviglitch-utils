@@ -25,8 +25,8 @@ Options:
     output: {type: 'string', alias: 'o'},
     bfile: {type: 'string', alias: 'b'},
     ratio: {type: 'string', alias: 'r', default: 5},
-    raw: {type: 'boolean'},
-    debug: {type: 'boolean'}
+    raw: {type: 'boolean', default: false},
+    debug: {type: 'boolean', default: false}
   }
 };
 
