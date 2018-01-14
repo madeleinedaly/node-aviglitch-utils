@@ -14,4 +14,5 @@ npm i -g aviglitch-utils
 ```sh
 colorcrash --help
 plated-datamosh --help
+squeeze-frame --help
 ```
