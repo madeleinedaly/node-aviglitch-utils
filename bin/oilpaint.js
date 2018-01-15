@@ -14,7 +14,7 @@ Usage:
   __FILE__ <infile> [-o <outfile> -u <unit> -s <step>]
 Options:
   -o --output <outfile>  Set output file name [default: out.avi].
-  -u --unit <unit>       Set unit size [default: 4].
+  -u --unit <unit>       Set unit size [default: 3].
   -s --step <step>       Set step size [default: 1].
   -h --help              Show this screen.
 `.replace(/__FILE__/g, path.basename(process.argv[1], '.js')),
