@@ -5,11 +5,15 @@
   "author": "Madeleine Daly",
   "bin": {
     "colorcrash": "./bin/colorcrash.js",
+    "oilpaint": "./bin/oilpaint.js",
     "plated-datamosh": "./bin/plated-datamosh.js",
     "squeeze-frame": "./bin/squeeze-frame.js"
   },
   "bugs": {
     "url": "https://github.com/madeleinedaly/node-aviglitch-utils/issues"
+  },
+  "devDependencies": {
+    "np": "^2.18.3"
   },
   "dependencies": {
     "aviglitch": "^0.3.0",
@@ -37,8 +41,5 @@
   },
   "scripts": {
     "release": "np --no-yarn"
-  },
-  "devDependencies": {
-    "np": "^2.18.3"
   }
 }
