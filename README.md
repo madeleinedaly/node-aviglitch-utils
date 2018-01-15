@@ -12,8 +12,9 @@ npm i -g aviglitch-utils
 ## Usage
 
 ```sh
-colorcrash --help
+colorcrash input.avi [output.avi]
+plated-datamosh input.avi [output.avi]
+
 oilpaint --help
-plated-datamosh --help
 squeeze-frame --help
 ```
