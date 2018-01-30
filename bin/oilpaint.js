@@ -5,7 +5,7 @@ const times = require('lodash/times');
 const meow = require('meow');
 const path = require('path');
 const fs = require('fs');
-const { runcmd } = require('./helper');
+const { runcmd, id } = require('./helper');
 
 const options = {
   description: false,
@@ -28,7 +28,7 @@ Options:
 (async cli => {
   if (cli.flags.h) cli.showHelp(0);
   const [ unit, step ] = ['u', 's'].map(flag => parseInt(cli.flags[flag], 10));
-  const tmp = `${Date.now()}.avi`;
+  const tmp = `${id()}.avi`;
   await runcmd('ffmpeg', ['-i', cli.input.shift(), '-an', '-vcodec', 'copy', '-r', '30', tmp]);
   const g = AviGlitch.open(tmp);
   g.glitch('keyframe', x => null);
