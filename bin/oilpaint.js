@@ -43,7 +43,7 @@ Options:
     } else {
       q.concat(f);
     }
-    console.log(`>> ${String(pos).padStart(4, '0')}/${size}`);
+    console.log(`>> ${String(pos).padStart(String(size).length, '0')}/${size}`);
   });
 
   AviGlitch.open(q).output(cli.flags.o, true, () => process.exit());
