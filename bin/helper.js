@@ -27,7 +27,10 @@ const mktmpdir = debug => {
   return dir;
 };
 
+const id = () => Math.random().toString(36).slice(2);
+
 module.exports = {
   runcmd,
-  mktmpdir
+  mktmpdir,
+  id
 };
