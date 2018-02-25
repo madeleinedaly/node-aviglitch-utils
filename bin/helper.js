@@ -1,5 +1,6 @@
 'use strict';
 const tempy = require('tempy');
+const range = require('lodash/range');
 const { promisify } = require('util');
 const childProcess = require('child_process');
 const execFile = promisify(childProcess.execFile);
@@ -19,7 +20,7 @@ const runcmd = async (cmd, args) => {
 const mktmpdir = debug => {
   let dir;
   if (debug) {
-    dir = path.resolve(process.cwd(), '../tmp');
+    dir = path.resolve('./tmp');
     if (!fs.existsSync(dir)) fs.mkdirSync(dir);
   } else {
     dir = tempy.directory();
@@ -27,7 +28,7 @@ const mktmpdir = debug => {
   return dir;
 };
 
-const id = () => Math.random().toString(36).slice(2);
+const id = () => range(4).map(() => Math.random().toString(16).slice(2)).join('');
 
 module.exports = {
   runcmd,
