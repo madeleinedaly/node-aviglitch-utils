@@ -1,3 +1,4 @@
+<!-- -*- mode: gfm -*- -->
 * [ ] [concat.rb](https://github.com/ucnv/aviglitch-utils/blob/master/bin/concat.rb)
 * [ ] [datamosh.rb](https://github.com/ucnv/aviglitch-utils/blob/master/bin/datamosh.rb)
 * [x] [huffyuv.rb](https://github.com/ucnv/aviglitch-utils/blob/master/bin/huffyuv.rb)
