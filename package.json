@@ -4,10 +4,10 @@
   "version": "0.0.14",
   "author": "Madeleine Daly",
   "bin": {
-    "colorcrash": "./bin/colorcrash.js",
-    "oilpaint": "./bin/oilpaint.js",
-    "plated-datamosh": "./bin/plated-datamosh.js",
-    "squeeze-frame": "./bin/squeeze-frame.js"
+    "colorcrashing": "./bin/colorcrashing.js",
+    "oilpainting": "./bin/oilpainting.js",
+    "plated_datamoshing": "./bin/plated_datamoshing.js",
+    "squeeze": "./bin/squeeze.js"
   },
   "bugs": {
     "url": "https://github.com/madeleinedaly/node-aviglitch-utils/issues"

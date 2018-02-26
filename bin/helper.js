@@ -8,8 +8,9 @@ const path = require('path');
 const fs = require('fs');
 
 // treats ffmpeg stderr as stdout
-const runcmd = async (cmd, args) => {
+const runcmd = async (cmd, args, log = false) => {
   try {
+    if (log) console.log([cmd, ...args].join(' '));
     const { stdout } = await execFile(cmd, args);
     return stdout;
   } catch({ stderr }) {
@@ -28,10 +29,16 @@ const mktmpdir = debug => {
   return dir;
 };
 
-const id = () => range(4).map(() => Math.random().toString(16).slice(2)).join('');
+const uid = () => range(4).map(() => Math.random().toString(16).slice(2)).join('');
+
+const pp = x => {
+  console.dir(x, {colors: true, depth: null});
+  console.log('\n');
+};
 
 module.exports = {
   runcmd,
   mktmpdir,
-  id
+  uid,
+  pp
 };
