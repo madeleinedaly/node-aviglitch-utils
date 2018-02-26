@@ -5,8 +5,10 @@
   "author": "Madeleine Daly",
   "bin": {
     "colorcrashing": "./bin/colorcrashing.js",
+    "huffyuv": "./bin/huffyuv.js",
     "oilpainting": "./bin/oilpainting.js",
     "plated_datamoshing": "./bin/plated_datamoshing.js",
+    "snow": "./bin/snow.js",
     "squeeze": "./bin/squeeze.js"
   },
   "bugs": {
