@@ -10,7 +10,7 @@
 * [x] [plated_datamoshing](https://gist.github.com/ucnv/772097)
 * [ ] [datamosh_and_reverse](https://gist.github.com/ucnv/475617)
 * [ ] [swap](https://gist.github.com/ucnv/164292)
-* [ ] [128itch](https://gist.github.com/ucnv/159979)
+* [x] [128itch](https://gist.github.com/ucnv/159979)
 * [ ] [halflost](https://gist.github.com/ucnv/159977)
 * [x] [slide](https://gist.github.com/ucnv/159976)
 <!-- * [ ] [kuboyurika](https://gist.github.com/ucnv/561370) -->
