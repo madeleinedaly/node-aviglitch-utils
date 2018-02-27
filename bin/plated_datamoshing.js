@@ -18,7 +18,5 @@ keys.forEach(i => {
   a.frames.insert(i, fb);
 });
 
-const dest = path.resolve(process.cwd(), output || 'out.avi');
-a.output(dest, true, () => {
-  process.exit();
-});
+const dst = path.resolve(process.cwd(), output || 'out.avi');
+a.output(dst, true, () => process.exit());
